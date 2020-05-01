@@ -20,14 +20,15 @@ The architecture of HRNet is described below:
 <p align='center'>  
   <img src='https://github.com/advaitkumar3107/MoNuSeg/blob/master/Images/hrnet_architecture.png' width='870'/>
 </p>
+The outputs from all the 4 branches are concatenated together and convolved into 1 channel for the output prediction.
+
 
 The architecture of the gated attention network is described below:
 
 <p align='center'>  
   <img src='https://github.com/advaitkumar3107/MoNuSeg/blob/master/Images/attention.png' width='870'/>
 </p>
-
-The outputs from all the 4 branches are concatenated together and convolved into 1 channel for the output prediction.
+The gate channel contains feature maps from the coarser regions of the network and the input channel contain the original input feature maps.
 
 The dataset was split into [training](https://github.com/advaitkumar3107/MoNuSeg/tree/master/Datasets/nucleus) and [testing](https://github.com/advaitkumar3107/MoNuSeg/tree/master/Datasets/test). While training, the training dataset was randomly split into training images(80%) and validation images(20%). For pre-processing, the data was randomly augmented(flipped, mirrored, translated). Each 1000X1000 image was split into 25, 200X200 patches for training.
 
