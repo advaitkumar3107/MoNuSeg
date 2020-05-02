@@ -33,7 +33,10 @@ The gate channel contains feature maps from the coarser regions of the network a
 The dataset was split into [training](https://github.com/advaitkumar3107/MoNuSeg/tree/master/Datasets/nucleus) and [testing](https://github.com/advaitkumar3107/MoNuSeg/tree/master/Datasets/test). While training, the training dataset was randomly split into training images(80%) and validation images(20%). For pre-processing, the data was randomly augmented(flipped, mirrored, translated). Each 1000X1000 image was split into 25, 200X200 patches for training.
 
 ### Results
-I used the jaccard_score metric from sklearn.metrics, to calculate accuracy. The code for testing the model and displaying results is present [here](https://github.com/advaitkumar3107/MoNuSeg/blob/master/solution/Monuseg_Prediction.ipynb). The ensembled model takes the pixel wise maximum of the outputs through both the UNet and the HRNet models. The accuracy is calculated on the unseen 14 test images.
+F1 score = 0.7591
+iou = 0.6135
+
+I also used the jaccard_score metric from sklearn.metrics, to calculate accuracy. The code for testing the model and displaying results is present [here](https://github.com/advaitkumar3107/MoNuSeg/blob/master/solution/Monuseg_Prediction.ipynb). The accuracy is calculated on the unseen 14 test images.
 
 Accuracy of the final HRNet + gated attention model = 0.6731
 
