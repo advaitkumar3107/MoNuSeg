@@ -53,3 +53,5 @@ Results from the HRNet Model with attention:
 <p align='center'>  
   <img src='https://github.com/advaitkumar3107/MoNuSeg/blob/master/Images/hrnet_predictions.png' width='870'/>
 </p>
+
+The predictions for all the 14 test images are present [here](https://github.com/advaitkumar3107/MoNuSeg/tree/master/Datasets/predictions)
