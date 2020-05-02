@@ -33,7 +33,7 @@ The gate channel contains feature maps from the coarser regions of the network a
 The dataset was split into [training](https://github.com/advaitkumar3107/MoNuSeg/tree/master/Datasets/nucleus) and [testing](https://github.com/advaitkumar3107/MoNuSeg/tree/master/Datasets/test). While training, the training dataset was randomly split into training images(80%) and validation images(20%). For pre-processing, the data was randomly augmented(flipped, mirrored, translated). Each 1000X1000 image was split into 25, 200X200 patches for training.
 
 ### Results
-F1 score = 0.7591
+F1 score = 0.7591 <br />
 iou = 0.6135
 
 I also used the jaccard_score metric from sklearn.metrics, to calculate accuracy. The code for testing the model and displaying results is present [here](https://github.com/advaitkumar3107/MoNuSeg/blob/master/solution/Monuseg_Prediction.ipynb). The accuracy is calculated on the unseen 14 test images.
@@ -54,4 +54,4 @@ Results from the HRNet Model with attention:
   <img src='https://github.com/advaitkumar3107/MoNuSeg/blob/master/Images/hrnet_predictions.png' width='870'/>
 </p>
 
-The predictions for all the 14 test images are present [here](https://github.com/advaitkumar3107/MoNuSeg/tree/master/Datasets/predictions)
+The predictions for all the 14 test images are present [here](https://github.com/advaitkumar3107/MoNuSeg/tree/master/Datasets/prediction)
