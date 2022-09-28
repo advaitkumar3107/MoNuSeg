@@ -1,4 +1,4 @@
-# My solution for the MoNuSeg 2018 challenge
+# MoNuSeg 2018 challenge (Submission)
 Contains an implementation of a UNet and a HRNet model along with attention gated networks applied to them. The final accuracy is best for the HRNet + attention gated module.
 
 ## Content
